@@ -1,5 +1,37 @@
 # CRM Management
 
+## Index
+
+- [CRM Management](#crm-management)
+  - [Application Directory Structure and Domain-Based Architecture](#application-directory-structure-and-domain-based-architecture)
+    - [Overview](#overview)
+    - [Core Principles](#core-principles)
+    - [Directory Structure](#directory-structure)
+      - [Root Directory](#root-directory)
+      - [crm/ Directory](#crm-directory)
+      - [db/ Directory](#db-directory)
+      - [domain/ Directory](#domain-directory)
+        - [Example: Account Domain](#example-account-domain)
+      - [Adding New Domains](#adding-new-domains)
+      - [Example: Adding a New "Products" Domain](#example-adding-a-new-products-domain)
+  - [Usage Example](#usage-example)
+    - [Service Base](#service-base)
+    - [Example Usage of `ServiceAccount`](#example-usage-of-serviceaccount)
+  - [Environment variables](#environment-variables)
+  - [scripts/ Documentation](#scripts-documentation)
+    - [scripts/extract_crm_data](#scriptsextract_crm_data)
+    - [scripts/update_domain_value](#scriptsupdate_domain_value)
+  - [Database Schema Design for CRM System](#database-schema-design-for-crm-system)
+    - [Tables Overview](#tables-overview)
+      - [1. Accounts Table](#1-accounts-table)
+      - [2. Contacts Table](#2-contacts-table)
+      - [3. Deals Table](#3-deals-table)
+      - [4. Deal Aggregations Table](#4-deal-aggregations-table)
+    - [Key Assumptions](#key-assumptions)
+    - [Relationships to CRM Records](#relationships-to-crm-records)
+    - [Other SQL queries involved](#other-sql-queries-involved)
+
+
 ## Application Directory Structure and Domain-Based Architecture
 
 ### Overview
